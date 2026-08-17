@@ -1,0 +1,13 @@
+App(
+    appid="flip_time",
+    name="Flip Time",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="flip_time_app",
+    requires=["gui", "notification"],
+    stack_size=3 * 1024,
+    fap_category="Tools",
+    fap_icon="flip_time_10px.png",
+    fap_author="Hadi",
+    fap_description="Stopwatch and timers",
+    fap_version="1.1",
+)

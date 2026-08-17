@@ -1,0 +1,1 @@
+A clean, standalone Flipper Zero time utility for Momentum Firmware featuring a precise stopwatch, one customizable countdown timer, sound and vibration alerts, and a “Welcome FlipTime by Hadi” pop-up. No alarms, background service, or firmware modifications.

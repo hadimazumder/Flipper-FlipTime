@@ -1,0 +1,8 @@
+flipper-zero
+flipperzero
+fap
+momentum-firmware
+stopwatch
+countdown-timer
+embedded-c
+open-source
