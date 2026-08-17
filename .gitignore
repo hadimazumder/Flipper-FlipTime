@@ -1,0 +1,18 @@
+# Build output
+dist/
+build/
+
+# uFBT
+.ufbt/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
