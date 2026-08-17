@@ -1,0 +1,32 @@
+name: Build FAP
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-momentum:
+    name: Momentum release SDK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Build with uFBT
+        id: build
+        uses: flipperdevices/flipperzero-ufbt-action@v0.1
+        with:
+          sdk-index-url: https://up.momentum-fw.dev/firmware/directory.json
+          sdk-channel: release
+
+      - name: Upload FAP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FlipTime-Momentum
+          path: ${{ steps.build.outputs.fap-artifacts }}
+          if-no-files-found: error
